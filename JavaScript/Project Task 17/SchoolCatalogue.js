@@ -43,13 +43,15 @@ class PrimarySchool extends School {
 }
 
 class MiddleSchool extends School{
-
+	constructor(name, numberOfStudents){
+		supper(name, 'middle', numberOfStudents);
+	}
 }
 
 class HighSchool extends School{
 	constructor(name, numberOfStudents, sportsTeams){
-		super(name, 'high', numberOfStudents)
-		this._sportsTeams = sportsTeams
+		super(name, 'high', numberOfStudents);
+		this._sportsTeams = sportsTeams;
 	}
 	get sportsTeams(){
 		for (var i = 0; i < _sportsTeams.length; i++) {

@@ -15,11 +15,11 @@ function hello(){
 
 hello()
 
-var x = window.matchMedia("(max-width: 960px)")
+var x = window.matchMedia("(max-width: 960px)");
 
 function myFunction(x) {
-	var y = window.matchMedia("(max-width: 700px)")
-	var z = window.matchMedia("(max-width: 470px)")
+	var y = window.matchMedia("(max-width: 700px)");
+	var z = window.matchMedia("(max-width: 470px)");
 	
 	if (z.matches && x.matches && y.matches){
 		document.querySelector("h1").style.fontSize='2rem';
@@ -27,7 +27,7 @@ function myFunction(x) {
 		var img = document.querySelectorAll(".gallery img");
 		for (var i = 0; i < img.length ; i++) {
 			img[i].style.width='100%';
-			img[i].style.margin='0%'
+			img[i].style.margin='0%';
 		}
 
 		document.querySelectorAll("li")[3].style.display="none";
